@@ -25,8 +25,14 @@ from django.urls import path, include
 #     path('test/', test),
 # ]
 
+# 6. Контроллеры и маршруты
+# urlpatterns = [
+#     path('admin/', admin.site.urls),
+#     path('news/', include('news.urls')),
+# ]
 
+# 7 Модели
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('news/', include('news.urls')),
+    path('', include('news.urls')),
 ]
