@@ -21,7 +21,7 @@ from .models import News
 
 # Huge context
 def index(request):
-    news = News.objects.order_by('-created_at')
+    news = News.objects.all()
     context = {
         'news': news,
         'title': 'Список новостей',
